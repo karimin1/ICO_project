@@ -1,4 +1,4 @@
-import { formatEther } from "ethers";
+import { ethers, formatEther } from "ethers";
 import { getProviderOrSigner } from "./web3modal";
 import {
   ERC20abi,
