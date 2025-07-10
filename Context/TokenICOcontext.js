@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useContext, useState } from "react";
-import { ethers, formatEther, parseEther } from "ethers";
+import { ethers } from "ethers";
+import { formatEther, parseEther } from "ethers";
 import toast from "react-hot-toast";
 import {
   changeNetwork,
