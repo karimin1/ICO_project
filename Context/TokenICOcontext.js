@@ -18,7 +18,6 @@ import {
 } from "../Utils/apiFeatures";
 import { shortenAddress } from "../Utils/index";
 import { TokenICOabi, TokenICOAddress, ERC20Address } from "./constants";
-import { notifySuccess, notifyError } from "";
 export const TokenICOContractContext = React.createContext();
 export const TokenICOContractProvider = ({ children }) => {
   const DAPP_NAME = "TOKEN ICO DAPP";
@@ -28,7 +27,7 @@ export const TokenICOContractProvider = ({ children }) => {
   const [loader, setLoader] = useState(false);
   const [account, setAccount] = useState("");
   const [count, setCount] = useState(0);
-  const notiftySuccess = (msg) => {
+  const notifySuccess = (msg) => {
     toast.success(msg, {
       duration: 2000,
     });
